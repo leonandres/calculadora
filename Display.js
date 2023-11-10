@@ -12,6 +12,11 @@ class Display{
         this.imprimirValores();
     }
 
+    borrarTodo(){
+        this.valorActual = '';
+        this.valorAnterior = '';
+    }
+
     agregarNumero(numero){
         if(numero === '.' && this.valorActual.includes('.')) return
         this.valorActual = this.valorActual.toString() + numero.toString();
