@@ -3,6 +3,7 @@ class Display{
         this.displayValorActual = displayValorActual;
         this.displayValorAnterior = displayValorAnterior;
         this.calculadora = new Calculadora();
+        this.tipoOperacion = undefined;
         this.valorActual = '';
         this.valorAnterior = '';
     }
@@ -15,6 +16,8 @@ class Display{
     borrarTodo(){
         this.valorActual = '';
         this.valorAnterior = '';
+        this.tipoOperacion = undefined;
+        this.imprimirValores();
     }
 
     agregarNumero(numero){
